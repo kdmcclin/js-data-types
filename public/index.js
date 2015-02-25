@@ -1,5 +1,5 @@
 var _BLANK_ = "you should fill in the blanks here too";
 
-var a = _BLANK_;
-var b = _BLANK_;
-var c = _BLANK_;
+var a = 42;
+var b = "hello, world";
+var c = true;
