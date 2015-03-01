@@ -5,33 +5,33 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
   describe("Numbers", function(){
 
     it("Addition", function(){
-      expect(2 + 3).to.equal(5);
-      expect(1.5 + 7.25).to.equal(8.75);
-      expect(100 + -50).to.equal(50);
+      expect(2 + 3).toEqual(5);
+      expect(1.5 + 7.25).toEqual(8.75);
+      expect(100 + -50).toEqual(50);
     });
 
     it("Subtraction", function(){
-      expect(6 - 4).to.equal(2);
-      expect(4 - 6).to.equal(-2);
-      expect(9 - 3.7).to.equal(5.3);
+      expect(6 - 4).toEqual(2);
+      expect(4 - 6).toEqual(-2);
+      expect(9 - 3.7).toEqual(5.3);
     });
 
     it("Multiplication", function(){
-      expect(3 * 5).to.equal(15);
-      expect(2 * -3).to.equal(-6);
-      expect(3.2 * 2).to.equal(6.4);
+      expect(3 * 5).toEqual(15);
+      expect(2 * -3).toEqual(-6);
+      expect(3.2 * 2).toEqual(6.4);
     });
 
     it("Division", function(){
-      expect(16 / 4).to.equal(4);
-      expect(7 / 2).to.equal(3.5);
-      expect(5.5 / 1.1).to.equal(5);
+      expect(16 / 4).toEqual(4);
+      expect(7 / 2).toEqual(3.5);
+      expect(5.5 / 1.1).toEqual(5);
     });
 
     it("Modulus", function(){
-      expect(5 % 2).to.equal(1);
-      expect(6 % 3).to.equal(0);
-      expect(27 % 5).to.equal(2);
+      expect(5 % 2).toEqual(1);
+      expect(6 % 3).toEqual(0);
+      expect(27 % 5).toEqual(2);
     });
 
   });
@@ -40,37 +40,37 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
 
     it("Length", function(){
 
-      expect("hello".length).to.equal(5);
-      expect(("hello, " + "world").length).to.equal(12);
+      expect("hello".length).toEqual(5);
+      expect(("hello, " + "world").length).toEqual(12);
 
       var sampleString = "test";
-      expect(sampleString.length).to.equal(4);
+      expect(sampleString.length).toEqual(4);
 
     });
 
     it("Concatenation", function(){
-      expect("hello, " + "world").to.equal("hello, world");
-      expect("a" + "b" + "c").to.equal("abc");
+      expect("hello, " + "world").toEqual("hello, world");
+      expect("a" + "b" + "c").toEqual("abc");
 
       var sampleString = "test";
-      expect(sampleString + ", " + sampleString + ", 1, 2, 3").to.equal("test, test, 1, 2, 3");
+      expect(sampleString + ", " + sampleString + ", 1, 2, 3").toEqual("test, test, 1, 2, 3");
     });
 
     it("Trim Whitespace", function(){
-      expect(" string stuff ".trim()).to.equal("string stuff");
-      expect("    ".trim()).to.equal("");
+      expect(" string stuff ".trim()).toEqual("string stuff");
+      expect("    ".trim()).toEqual("");
 
       var sampleString = " x y z";
-      expect(sampleString.trim()).to.equal("x y z");
+      expect(sampleString.trim()).toEqual("x y z");
     });
 
     it("Substring Searching", function(){
       // Note: "string".substring does something a little different.
       // Let's standardize "string".substr during this class.
 
-      expect("hello, world!".substr(2)).to.equal("llo, world!");
-      expect("hello, world!".substr(2, 1)).to.equal("l");
-      expect("hello, world!".substr(7, 3)).to.equal("wor");
+      expect("hello, world!".substr(2)).toEqual("llo, world!");
+      expect("hello, world!".substr(2, 1)).toEqual("l");
+      expect("hello, world!".substr(7, 3)).toEqual("wor");
     });
 
   });
@@ -79,8 +79,8 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
 
     it("Okay, there really isn't much else to do with booleans", function(){
 
-      expect(true).to.equal(true);
-      expect(false).to.equal(false);
+      expect(true).toEqual(true);
+      expect(false).toEqual(false);
 
     });
 
@@ -90,35 +90,35 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
 
     it("Strict Equality", function(){
 
-      expect(5 === 5).to.equal(true);
-      expect(5 === 3).to.equal(false);
-      expect(5 === "5").to.equal(false);
+      expect(5 === 5).toEqual(true);
+      expect(5 === 3).toEqual(false);
+      expect(5 === "5").toEqual(false);
 
     });
 
     it("Loose Equality", function(){
 
-      expect(5 == 5).to.equal(true);
-      expect(5 == 3).to.equal(false);
-      expect(5 == "5").to.equal(true);
+      expect(5 == 5).toEqual(true);
+      expect(5 == 3).toEqual(false);
+      expect(5 == "5").toEqual(true);
 
     });
 
     it("Comparison", function(){
 
-      expect(5 > 5).to.equal(false);
-      expect(5 >= 5).to.equal(true);
-      expect(5 > 3).to.equal(true);
-      expect(5 < 3).to.equal(false);
+      expect(5 > 5).toEqual(false);
+      expect(5 >= 5).toEqual(true);
+      expect(5 > 3).toEqual(true);
+      expect(5 < 3).toEqual(false);
 
     });
 
     it("Non-Equality", function(){
 
-      expect(!(5 > 3)).to.equal(false);
-      expect(!!(5 > 3)).to.equal(true);
-      expect(5 !== "5").to.equal(true);
-      expect(5 != "5").to.equal(false);
+      expect(!(5 > 3)).toEqual(false);
+      expect(!!(5 > 3)).toEqual(true);
+      expect(5 !== "5").toEqual(true);
+      expect(5 != "5").toEqual(false);
 
     });
 
@@ -135,7 +135,7 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
         result = "yep";
       }
 
-      expect(result).to.equal("yep");
+      expect(result).toEqual("yep");
 
       result = 1;
 
@@ -147,7 +147,7 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
         }
       }
 
-      expect(result).to.equal(2);
+      expect(result).toEqual(2);
 
     });
 
@@ -163,7 +163,7 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
         result = 2;
       }
 
-      expect(result).to.equal(2);
+      expect(result).toEqual(2);
 
       result = "";
 
@@ -188,7 +188,7 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
 
       }
 
-      expect(result).to.equal(10);
+      expect(result).toEqual(10);
 
     });
 
@@ -199,11 +199,11 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
       for (var i = 0; i < 5; i++) {
         count = count + 2;
 
-        expect(i).to.be.lessThan(5);
+        expect(i).toBeLessThan(5);
       }
 
-      expect(i).to.equal(5);
-      expect(count).to.equal(10);
+      expect(i).toEqual(5);
+      expect(count).toEqual(10);
 
     });
 
@@ -216,11 +216,11 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
         count = count + 2;
         left = left - 1;
 
-        expect(left).to.be.at.least(0);
+        expect(left).toBeCloseTo(left);
       }
 
-      expect(left).to.equal(0);
-      expect(count).to.equal(20);
+      expect(left).toEqual(0);
+      expect(count).toEqual(20);
 
     });
 
@@ -230,14 +230,14 @@ describe("Assignment 05 - Fill in the _BLANK_s!", function(){
 
     it("Values in index.js", function(){
 
-      expect(a).to.equal(42);
-      expect(b).to.equal("hello, world");
-      expect(c).to.equal(true);
+      expect(a).toEqual(42);
+      expect(b).toEqual("hello, world");
+      expect(c).toEqual(true);
       
-      expect(a).to.exist;
-      expect(b).to.exist;
-      expect(c).to.exist;
-      expect(d).to.not.exist;
+      expect(a).toBeDefined;
+      expect(b).toBeDefined;
+      expect(c).toBeDefined;
+      expect(d).not.toBeDefined;
 
     });
 
